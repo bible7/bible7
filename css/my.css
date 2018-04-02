@@ -1,0 +1,188 @@
+body {
+  background: #f8f8d8;
+  color: #222;
+}
+.pure-table thead {
+  background-color: #ffff0061;
+}
+.pure-table thead.foot {
+  background-color: #ffff00bf;
+}
+a:link,a:visited,a:active {  
+   color: #444;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+   color: #FF0000;
+}
+th.selected {
+    color: #FF0000;
+}
+.menu-link {
+    opacity: 0.4;
+}
+.my-tr {
+    text-align: center;
+    line-height: 3;
+}
+thead>.my-tr {
+  line-height: 2;
+}
+.my-table {
+    width: 100%;
+    cursor: pointer;
+    word-break: keep-all;
+}
+.my-table .bible-title {
+  font-size: 22px;
+}
+.my-table .content-thead {
+  cursor: auto;
+}
+.my-table strong {
+	font-size: 1.2em;
+}
+.my-table td{
+	width: 25%;
+}
+.my-table td:hover {
+    color: #FF0000;
+}
+.my-table .t-content td:hover {
+  color: inherit;
+}
+.my-table .chapter td {
+  width: 20%;
+}
+.my-table td span {
+	display: block;
+    margin-top: -2em;
+    font-size: 0.8em;
+}
+#menu {
+  width: 6em;
+}
+.menu-link {
+  padding: 1.5em 0.8em;
+}
+.my-content {
+  padding: 0.5em;
+}
+
+/*switch开关*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+  top: 8px;
+  left: 5px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.my-back {
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  float: right;
+  display: inline-block;
+  padding: 0 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #0078e7 !important;
+}
+.my-back.home {
+  float: left;
+}
+
+.control {
+  display: inline-block;
+  cursor: pointer;
+}
+.control.play {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 12px solid #555;
+  border-bottom: 8px solid transparent;
+}
+.control.pause {
+  width: 4px;
+  height: 16px;
+  border-right: 4px solid #555;
+  border-left: 4px solid #555;
+}
+.bible-title.num {
+  margin-right: 5px;
+}
+
+a.pevious-next {
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 18px 10px 18px;
+    line-height: 1;
+    font-size: 34px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    top: 50%;
+    opacity: 0.7;
+    z-index: 999;
+}
+a.pevious-next:hover {
+    background-color: #ddd;
+    color: black;
+}
+a.pevious-next.previous {
+  left: 8px;
+}
+a.pevious-next.next {
+  right: 8px;
+}
+.pevious-next.round {
+    border-radius: 50%;
+}
