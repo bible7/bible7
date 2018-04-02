@@ -186,3 +186,7 @@ a.pevious-next.next {
 .pevious-next.round {
     border-radius: 50%;
 }
+#content_wrap div.content div#section_portal {
+  width: 53%;
+  text-align: center;
+}

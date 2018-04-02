@@ -20,13 +20,13 @@ $content = <<<EOF
 </audio>
 <div id="content_wrap">
     <header>
-        <h1><a href="index.html">Mr. Joe Payton</a></h1>
+        <h1><a href="#">Mr. Leptune</a></h1>
         <nav id="main_nav">
-            <a href="work/index.html" id="work" class="badge_link icon-pencil">
+            <a href="work/index.html" id="work" class="badge_link icon-twitter">
                 <span class="ribbon">
 					<span class="ribbon-stitches-top"></span>
                 <strong class="ribbon-content">
-						<span class="link_title">My Work</span>
+						<span class="link_title">捐赠</span>
 					</strong>
                 <span class="ribbon-stitches-bottom"></span>
                 </span>
@@ -36,7 +36,7 @@ $content = <<<EOF
                 <span class="ribbon">
 					<span class="ribbon-stitches-top"></span>
                 <strong class="ribbon-content">
-						<span class="link_title">About Me</span>
+						<span class="link_title">关于我</span>
 					</strong>
                 <span class="ribbon-stitches-bottom"></span>
                 </span>
@@ -46,7 +46,7 @@ $content = <<<EOF
                 <span class="ribbon">
 					<span class="ribbon-stitches-top"></span>
                 <strong class="ribbon-content">
-						<span class="link_title">Let&rsquo;s Talk</span>
+						<span class="link_title">一起聊聊~</span>
 					</strong>
                 <span class="ribbon-stitches-bottom"></span>
                 </span>
@@ -57,12 +57,12 @@ $content = <<<EOF
 
     <div class="ball">
         <div class="dribble-bubble">
-            <h2>Check Out My Dribbbles</h2>
-            <a href="http://dribbble.com/mrjoepayton" class="keep_in_window icon-link-ext-alt">open in same window</a>
-            <a href="http://dribbble.com/mrjoepayton" class="icon-popup">open in new window</a>
+            <h2>该网站开源了！希望能获得您的star！</h2>
+            <a href="https://coding.net/u/bible7/p/bible7/git" class="keep_in_window icon-link-ext-alt">直接打开</a>
+            <a href="https://coding.net/u/bible7/p/bible7/git" class="icon-popup">新窗口打开</a>
             <span></span>
         </div>
-        <a href="http://dribbble.com/mrjoepayton" class="basketball">
+        <a href="https://coding.net/u/bible7/p/bible7/git" class="basketball">
 			Check out my shots Dribbble
 			<span class="shading"></span>
 			<span class="ball"></span>
@@ -92,7 +92,7 @@ $content = <<<EOF
         <section id="intro">
 
             <p>
-                <span>Helping create a beautiful, elegant &amp; practical web.</span>
+                <span title='好好学习，天天向“上”~~~'>GOOD GOOD STUDY, DAY DAY UP~~</span>
                 <button id="menu_return" class="icon-menu"><span>Menu</span>
                 </button>
             </p>
