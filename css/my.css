@@ -19,9 +19,6 @@ a:hover {
 th.selected {
     color: #FF0000;
 }
-.menu-link {
-    opacity: 0.4;
-}
 .my-tr {
     text-align: center;
     line-height: 3;
@@ -60,66 +57,10 @@ thead>.my-tr {
     margin-top: -2em;
     font-size: 0.8em;
 }
-#menu {
-  width: 6em;
-}
-.menu-link {
-  padding: 1.5em 0.8em;
-}
 .my-content {
   padding: 0.5em;
 }
 
-/*switch开关*/
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 54px;
-  height: 28px;
-  top: 8px;
-  left: 5px;
-}
-.switch input {display:none;}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color: #2196F3;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
 
 .my-back {
   font-size: 16px;
@@ -185,8 +126,4 @@ a.pevious-next.next {
 }
 .pevious-next.round {
     border-radius: 50%;
-}
-#content_wrap div.content div#section_portal {
-  width: 53%;
-  text-align: center;
 }

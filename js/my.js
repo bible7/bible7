@@ -29,24 +29,6 @@ if ($(".control").length) {
     });
 }
 $(document).ready(function(){
-	// 读取cookie
-	var config = Cookies.getJSON('config');
-	if (typeof config == "undefined") {
-		config = {
-			autoPlay: false
-		};
-	}
-	if (config.autoPlay) {
-		$('#switch-auto').prop('checked', true);
-		if ($('.control.play').length) {
-			play_audio($('.control.play:first'));
-		}
-	}
-
-	$('body').on('click', '#switch-auto', function(event) {
-		config.autoPlay = $(this).prop('checked');
-		Cookies.set('config', config);
-	});
 	$('body').on('click', '.bible-type-old', function(event) {
 		$('.bible-old').show();
 		$('.bible-type-old').addClass('selected');

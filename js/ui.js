@@ -44,3 +44,19 @@
     };
 
 }(this, this.document));
+
+$(document).ready(function(){
+    // 读取cookie
+    var config = Cookies.getJSON('config');
+    if (typeof config == "undefined") {
+        config = {
+            autoPlay: false
+        };
+    }
+    if (config.autoPlay) {
+        $('#switch-auto').prop('checked', true);
+        if ($('.control.play').length) {
+            play_audio($('.control.play:first'));
+        }
+    }
+});

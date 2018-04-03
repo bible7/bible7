@@ -5419,3 +5419,8 @@ body {
    Print styles.
    Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
+#content_wrap div.content div#section_portal {
+  width: 53%;
+  text-align: center;
+}
