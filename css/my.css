@@ -30,6 +30,7 @@ thead>.my-tr {
     width: 100%;
     cursor: pointer;
     word-break: keep-all;
+    table-layout: fixed;
 }
 .my-table .bible-title {
   font-size: 22px;
