@@ -142,18 +142,18 @@ $options = [
     'top_path' => '../../',
 ];
 $options['HeadFoot'] = <<<EOF
-    <link rel="stylesheet" href="../../css/pure-min.css">
-    <link rel='stylesheet' href='../../css/my.css'>
-    <link rel="stylesheet" href="../../css/bible_content.css">
+<link rel="stylesheet" href="../../css/pure-min.css">
+<link rel='stylesheet' href='../../css/my.css'>
+<link rel="stylesheet" href="../../css/bible_content.css">
 EOF;
 $options['BodyFoot'] = <<<EOF
-    <div style="display: none;">
-        <audio controls>
-          <source src="" type="audio/mp3">
-        </audio>
-    </div>
-    <script src="../../js/plyr.js"></script>
-    <script src="../../js/my.js"></script>
+<div style="display: none;">
+    <audio controls>
+      <source src="" type="audio/mp3">
+    </audio>
+</div>
+<script src="../../js/plyr.js"></script>
+<script src="../../js/my.js"></script>
 EOF;
 
 $countI = 0;
@@ -198,45 +198,45 @@ foreach ($chs as $key => $obj) {
         }
         $tmpContent = file_get_contents("../data/{$abbr}.{$i}.html");
         $options['BodyMain'] = <<<EOF
-            <div class="my-content">
-                <table class="pure-table pure-table-bordered my-table">
-                    <thead class="content-thead">
-                        <tr class="my-tr">
-                            <th colspan="5" class="selected">
-                                <a class="my-back home" href="/">首页</a>
-                                <strong class="bible-title">{$name}</strong>
-                                <strong class="bible-title num">{$i}</strong>
-                                <div class="control play" title="朗读"></div>
-                                <div class="control pause" style="display: none;" title="暂停"></div>
-                                <a class="my-back" href="/chapter/{$key}.html">返回</a>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="t-content">
-                        <tr class="my-tr">
-                            <td colspan="5">
-                                <a href="{$prevUrl}" class="pevious-next previous round" title="上一章">&#8249;</a>
-                                <a href="{$nextUrl}" class="pevious-next next round" title="下一章">&#8250;</a>
-                                <div class="bible-body-i bible-content display_verse_number display_title">
-                                    {$tmpContent}
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <thead class="foot content-thead">
-                        <tr class="my-tr">
-                            <th colspan="5" class="selected">
-                                <a class="my-back home" href="/">首页</a>
-                                <strong class="bible-title">{$name}</strong>
-                                <strong class="bible-title num">{$i}</strong>
-                                <div class="control play" title="朗读"></div>
-                                <div class="control pause" style="display: none;" title="暂停"></div>
-                                <a class="my-back" href="/chapter/{$key}.html">返回</a>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
+<div class="my-content">
+    <table class="pure-table pure-table-bordered my-table">
+        <thead class="content-thead">
+            <tr class="my-tr">
+                <th colspan="5" class="selected">
+                    <a class="my-back home" href="/">首页</a>
+                    <strong class="bible-title">{$name}</strong>
+                    <strong class="bible-title num">{$i}</strong>
+                    <div class="control play" title="朗读"></div>
+                    <div class="control pause" style="display: none;" title="暂停"></div>
+                    <a class="my-back" href="/chapter/{$key}.html">返回</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="t-content">
+            <tr class="my-tr">
+                <td colspan="5">
+                    <a href="{$prevUrl}" class="pevious-next previous round" title="上一章">&#8249;</a>
+                    <a href="{$nextUrl}" class="pevious-next next round" title="下一章">&#8250;</a>
+                    <div class="bible-body-i bible-content display_verse_number display_title">
+                        {$tmpContent}
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <thead class="foot content-thead">
+            <tr class="my-tr">
+                <th colspan="5" class="selected">
+                    <a class="my-back home" href="/">首页</a>
+                    <strong class="bible-title">{$name}</strong>
+                    <strong class="bible-title num">{$i}</strong>
+                    <div class="control play" title="朗读"></div>
+                    <div class="control pause" style="display: none;" title="暂停"></div>
+                    <a class="my-back" href="/chapter/{$key}.html">返回</a>
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>
 EOF;
         $dir = "../content/{$key}";
         if (!file_exists($dir)) {
