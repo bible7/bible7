@@ -8,6 +8,7 @@ function gen_html($options = []) {
         'HeadFoot' => '',
         'BodyHead' => '',
         'BodyMain' => '',
+        'BodyMenuAfter' => '',
         'BodyFoot' => '',
     ];
     foreach ($keys as $key => $default) {
@@ -24,6 +25,8 @@ function gen_html($options = []) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="{$options['keywords']}">
     <meta name="description" content="{$options['description']}">
+
+    <link rel="stylesheet" href="{$options['top_path']}css/common.css">
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="{$options['top_path']}css/layouts/side-menu-old-ie.css">
     <![endif]-->
@@ -59,6 +62,7 @@ function gen_html($options = []) {
             </ul>
         </div>
     </div>
+    {$options['BodyMenuAfter']}
 </div>
 {$options['BodyMain']}
 <script src="{$options['top_path']}js/jquery.min.js"></script>

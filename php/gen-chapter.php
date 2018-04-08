@@ -79,57 +79,59 @@ EOF;
 $options['BodyFoot'] = '<script src="../js/my.js"></script>';
 foreach ($chs as $key => $obj) {
 	$name = $obj['name'];
-	$options['BodyMain'] = <<<EOF
-<div class="my-content">
-    <table class="pure-table pure-table-bordered my-table">
-        <thead>
-            <tr class="my-tr">
-                <th colspan="5" class="selected">
-                    <a class="my-back home" href="/">首页</a>
-                    <strong class="bible-title">{$name}</strong>
-                    <a class="my-back" href="/">返回</a>
-                </th>
-            </tr>
-        </thead>
-        <tbody class="chapter">
-            <tr class="my-tr">
+	$options['BodyMenuAfter'] = <<<EOF
+<div id="main">
+    <div class="my-content">
+        <table class="pure-table pure-table-bordered my-table">
+            <thead>
+                <tr class="my-tr">
+                    <th colspan="5" class="selected">
+                        <a class="my-back home" href="/">首页</a>
+                        <strong class="bible-title">{$name}</strong>
+                        <a class="my-back" href="/">返回</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="chapter">
+                <tr class="my-tr">
 EOF;
 	for ($i=1; $i <= $obj['count']; $i++) { 
-        $options['BodyMain'] .= <<<EOF
+        $options['BodyMenuAfter'] .= <<<EOF
 
-                <td onclick="window.location.href='../content/{$key}/{$key}_{$i}.html';"><strong>{$i}</strong></td>
+                    <td onclick="window.location.href='../content/{$key}/{$key}_{$i}.html';"><strong>{$i}</strong></td>
 EOF;
         if ((0 == $i % 5) and $i >= 5) {
-            $options['BodyMain'] .= <<<EOF
+            $options['BodyMenuAfter'] .= <<<EOF
 
-            </tr>
-            <tr class="my-tr">
+                </tr>
+                <tr class="my-tr">
 EOF;
         }
 	}
     $rest = 5 - ($obj['count'] % 5);
     if ($rest < 5) { // 补全空的
         for ($i=1; $i <= $rest; $i++) { 
-            $options['BodyMain'] .= <<<EOF
+            $options['BodyMenuAfter'] .= <<<EOF
 
-                <td></td>
+                    <td></td>
 EOF;
         }
     }
-	$options['BodyMain'] .= <<<EOF
+	$options['BodyMenuAfter'] .= <<<EOF
 
-            </tr>
-        </tbody>
-        <thead class='foot'>
-            <tr class="my-tr">
-                <th colspan="5" class="selected">
-                    <a class="my-back home" href="/">首页</a>
-                    <strong class="bible-title">{$name}</strong>
-                    <a class="my-back" href="/">返回</a>
-                </th>
-            </tr>
-        </thead>
-    </table>
+                </tr>
+            </tbody>
+            <thead class='foot'>
+                <tr class="my-tr">
+                    <th colspan="5" class="selected">
+                        <a class="my-back home" href="/">首页</a>
+                        <strong class="bible-title">{$name}</strong>
+                        <a class="my-back" href="/">返回</a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </div>
 EOF;
 	file_put_contents("../chapter/{$key}.html", gen_html($options));
