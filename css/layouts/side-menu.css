@@ -1,5 +1,6 @@
 .pure-menu {
     box-sizing: border-box
+    z-index: 9999;
 }
 .pure-menu-fixed {
     position: fixed;

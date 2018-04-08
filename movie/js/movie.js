@@ -7,4 +7,8 @@ $(document).ready(function(){
 			$('#my-bg .img'+bgIndex).fadeIn();
 		});
 	}, 3000);
+	$('body').on('click', '.col-1-2', function(event) {
+		var target = $(this).data('target');
+		window.location.href = target+'.html';
+	});
 });

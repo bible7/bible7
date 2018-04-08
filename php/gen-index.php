@@ -1,12 +1,11 @@
 <?php
-include('template.php');
+include_once('template.php');
 $options = [];
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="css/pure-min.css">
 <link rel='stylesheet' href='css/my.css'>
 EOF;
-$options['BodyMenuAfter'] = <<<EOF
-<div id="main">
+$options['BodyMain'] = <<<EOF
     <div class="my-content">
         <table class="pure-table pure-table-bordered my-table">
             <thead>
@@ -137,7 +136,6 @@ $options['BodyMenuAfter'] = <<<EOF
             </thead>
         </table>
     </div>
-</div>
 EOF;
 $options['BodyFoot'] = '<script src="js/my.js"></script>';
 file_put_contents('../index.html', gen_html($options));

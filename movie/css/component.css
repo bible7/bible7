@@ -86,7 +86,7 @@ article .title a:hover {text-decoration: underline;}
 
 article .info{ text-align: center; display: inline-block; width: 100%;}
 article .info a{color: #ffffff;font-size: 14px;}
-article .info a:hover{color: #ffffff; text-decoration: underline;}
+article .info a:hover{color: #ffffff; text-decoration: none;}
 article .info a img{width: 20px; margin-right: 10px;}
 article .info ul {width: 100%;padding: 0px;list-style-type: none;}
 article .info li {width: auto;border-bottom: 1px dotted #e8e8e8;padding: 10px;margin-bottom: 10px;}
@@ -102,7 +102,7 @@ article .info-single ul li{float: left; padding: 0 10px; border-right: 1px dotte
 article .info-single ul li.avatar{border: none;}
 article .info-single ul li.last{border: none;}
 
-article .main-post  {padding: 10px;}
+article .main-post  {padding: 10px;height: 270px;}
 
 article .art-header{}
 article .art-header img{width: 100%;}

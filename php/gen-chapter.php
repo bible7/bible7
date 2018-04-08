@@ -68,7 +68,7 @@ $chs = [
     'Revelations'    => ['name' => '启 示 录'            , 'count' => 22 ],
 ];
 
-include('template.php');
+include_once('template.php');
 $options = [
     'top_path' => '../',
 ];
@@ -79,8 +79,7 @@ EOF;
 $options['BodyFoot'] = '<script src="../js/my.js"></script>';
 foreach ($chs as $key => $obj) {
 	$name = $obj['name'];
-	$options['BodyMenuAfter'] = <<<EOF
-<div id="main">
+	$options['BodyMain'] = <<<EOF
     <div class="my-content">
         <table class="pure-table pure-table-bordered my-table">
             <thead>
@@ -96,12 +95,12 @@ foreach ($chs as $key => $obj) {
                 <tr class="my-tr">
 EOF;
 	for ($i=1; $i <= $obj['count']; $i++) { 
-        $options['BodyMenuAfter'] .= <<<EOF
+        $options['BodyMain'] .= <<<EOF
 
                     <td onclick="window.location.href='../content/{$key}/{$key}_{$i}.html';"><strong>{$i}</strong></td>
 EOF;
         if ((0 == $i % 5) and $i >= 5) {
-            $options['BodyMenuAfter'] .= <<<EOF
+            $options['BodyMain'] .= <<<EOF
 
                 </tr>
                 <tr class="my-tr">
@@ -111,13 +110,13 @@ EOF;
     $rest = 5 - ($obj['count'] % 5);
     if ($rest < 5) { // 补全空的
         for ($i=1; $i <= $rest; $i++) { 
-            $options['BodyMenuAfter'] .= <<<EOF
+            $options['BodyMain'] .= <<<EOF
 
                     <td></td>
 EOF;
         }
     }
-	$options['BodyMenuAfter'] .= <<<EOF
+	$options['BodyMain'] .= <<<EOF
 
                 </tr>
             </tbody>
@@ -132,7 +131,6 @@ EOF;
             </thead>
         </table>
     </div>
-</div>
 EOF;
 	file_put_contents("../chapter/{$key}.html", gen_html($options));
 }

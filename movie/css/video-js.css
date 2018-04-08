@@ -1308,8 +1308,9 @@ video::-webkit-media-text-track-display {
 
 .my-video {
   width: 100%;
+  height: 48em;
 }
 .my-video .vjs-big-play-button {
-  left: 37%;
-  top: 40%;
+  left: 48%;
+  top: 48%;
 }

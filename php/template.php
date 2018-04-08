@@ -8,7 +8,6 @@ function gen_html($options = []) {
         'HeadFoot' => '',
         'BodyHead' => '',
         'BodyMain' => '',
-        'BodyMenuAfter' => '',
         'BodyFoot' => '',
     ];
     foreach ($keys as $key => $default) {
@@ -62,9 +61,10 @@ function gen_html($options = []) {
             </ul>
         </div>
     </div>
-    {$options['BodyMenuAfter']}
+    <div id="main">
+        {$options['BodyMain']}
+    </div>
 </div>
-{$options['BodyMain']}
 <script src="{$options['top_path']}js/jquery.min.js"></script>
 <script src="{$options['top_path']}js/js.cookie-2.2.0.min.js"></script>
 <script src="{$options['top_path']}js/ui.js"></script>
