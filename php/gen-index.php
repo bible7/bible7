@@ -3,7 +3,7 @@ include_once('template.php');
 $options = [];
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="css/pure-min.css">
-<link rel='stylesheet' href='css/my.css'>
+<link rel='stylesheet' href='css/my.css?1'>
 EOF;
 $options['BodyMain'] = <<<EOF
     <div class="my-content">
@@ -137,7 +137,7 @@ $options['BodyMain'] = <<<EOF
         </table>
     </div>
 EOF;
-$options['BodyFoot'] = '<script src="js/my.js"></script>';
+$options['BodyFoot'] = '<script src="js/my.js?1"></script>';
 file_put_contents('../index.html', gen_html($options));
 echo "success\n";
 die;

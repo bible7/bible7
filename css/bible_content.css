@@ -1002,3 +1002,7 @@ button.toast-close-button {
         transform: rotate(1turn)
     }
 }
+
+.bible-title {
+    cursor: pointer;
+}

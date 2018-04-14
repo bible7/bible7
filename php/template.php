@@ -25,7 +25,7 @@ function gen_html($options = []) {
     <meta name="keywords" content="{$options['keywords']}">
     <meta name="description" content="{$options['description']}">
 
-    <link rel="stylesheet" href="{$options['top_path']}css/common.css">
+    <link rel="stylesheet" href="{$options['top_path']}css/common.css?1">
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="{$options['top_path']}css/layouts/side-menu-old-ie.css">
     <![endif]-->

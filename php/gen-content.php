@@ -142,9 +142,9 @@ $options = [
     'top_path' => '../../',
 ];
 $options['HeadFoot'] = <<<EOF
-<link rel="stylesheet" href="../../css/pure-min.css">
-<link rel='stylesheet' href='../../css/my.css'>
-<link rel="stylesheet" href="../../css/bible_content.css">
+<link rel="stylesheet" href="../../css/pure-min.css?1">
+<link rel='stylesheet' href='../../css/my.css?1'>
+<link rel="stylesheet" href="../../css/bible_content.css?1">
 EOF;
 $options['BodyFoot'] = <<<EOF
 <div style="display: none;">
@@ -153,7 +153,7 @@ $options['BodyFoot'] = <<<EOF
     </audio>
 </div>
 <script src="../../js/plyr.js"></script>
-<script src="../../js/my.js"></script>
+<script src="../../js/my.js?1"></script>
 EOF;
 
 $countI = 0;
