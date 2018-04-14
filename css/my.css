@@ -125,7 +125,7 @@ a.pevious-next.next {
 
 
 #layout {
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   background: url(../img/bg1.jpg);
   background-repeat-x: initial;
   background-repeat-y: initial;
