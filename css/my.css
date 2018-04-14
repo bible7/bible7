@@ -1,12 +1,6 @@
 body {
-  background: #f8f8d8;
+  /*background: #f8f8d8;*/
   color: #222;
-}
-.pure-table thead {
-  background-color: #ffff0061;
-}
-.pure-table thead.foot {
-  background-color: #ffff00bf;
 }
 a:link,a:visited,a:active {  
    color: #444;
@@ -128,3 +122,32 @@ a.pevious-next.next {
 .pevious-next.round {
     border-radius: 50%;
 }
+
+
+#layout {
+  opacity: 0.8;
+  background: url(../img/bg1.jpg);
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.my-table {
+  background: #fff;
+  opacity: 0.8;
+}
+
+.pure-table thead {
+    background-color: #79ff70;
+}
+.pure-table thead.foot {
+    background-color: #39fd2c;
+}
+
