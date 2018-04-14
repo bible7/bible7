@@ -49,4 +49,5 @@ $(document).ready(function(){
 		$('.control').hide();
 		$('.control.play').show();
 	});
+	$('#layout').css('min-height', document.documentElement.clientHeight);
 });
