@@ -206,8 +206,8 @@ foreach ($chs as $key => $obj) {
                                 <a class="my-back home" href="/">首页</a>
                                 <strong class="bible-title">{$name}</strong>
                                 <strong class="bible-title num">{$i}</strong>
-                                <div class="control play" title="朗读"></div>
-                                <div class="control pause" style="display: none;" title="暂停"></div>
+                                <div class="control play-pause play" title="朗读"></div>
+                                <div class="control play-pause pause" style="display: none;" title="暂停"></div>
                                 <a class="my-back" href="/chapter/{$key}.html">返回</a>
                             </th>
                         </tr>

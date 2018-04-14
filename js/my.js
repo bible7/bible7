@@ -50,4 +50,7 @@ $(document).ready(function(){
 		$('.control.play').show();
 	});
 	$('#layout').css('min-height', document.documentElement.clientHeight);
+	$('body').on('click', '.bible-title', function() {
+		$('.play-pause:visible').click();
+	})
 });
