@@ -144,7 +144,7 @@ $options = [
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="../../css/pure-min.css?1">
 <link rel='stylesheet' href='../../css/my.css?2'>
-<link rel="stylesheet" href="../../css/bible_content.css?2">
+<link rel="stylesheet" href="../../css/bible_content.css?3">
 EOF;
 $options['BodyFoot'] = <<<EOF
 <div style="display: none;">
@@ -213,6 +213,9 @@ foreach ($chs as $key => $obj) {
                         </tr>
                     </thead>
                 </table>
+                <div class="my-tip bible-content-tips">
+                    点击播放
+                </div>
                 <div class="bible-body-i bible-content display_verse_number display_title">
                     {$tmpContent}
                 </div>
