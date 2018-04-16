@@ -2,12 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="圣经在线阅读,新约,旧约,手机版圣经,圣经朗读">
+        <meta name="description" content="手机版圣经提供中文圣经在线阅读、圣经朗读等功能">
         <style>
-        body {
-        	background: url(img/universe.webp);
-        }
+            body {
+                text-align: center;
+            }
+            .bg:before {
+              content: ' ';
+              position: fixed;
+              z-index: -1;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523894302934&di=003a04f82b08256c3261cfa792f466c2&imgtype=0&src=http%3A%2F%2Fdp.xinshoucun.com%2Fuploads%2Fpictures%2F2011-12%2F20111224232830167750t11036026911634_2.jpg) center 0 no-repeat;
+              background-size: cover;
+            }
+            .random {
+                background: #fff6;
+                padding: 100px;
+                width: 20%;
+                margin: 0 auto;
+                margin-top: 10%;
+                font-weight: bold;
+                color: blue;
+            }
+            #num {
+                font-size: 40px;
+                font-weight: bold;
+                color: red;
+                padding: 10px;
+            }
+            .tip {
+                top: -9px;
+                position: relative;
+            }
         </style>
     </head>
     <body>
+        <div class="bg"></div>
+        <p class="random">
+            <span class="tip">随机数：</span>
+            <span id="num"></span>
+        </p>
     </body>
+    <script>
+        function random(min, max) {
+            return parseInt(Math.random()*(max-min+1)+min,10);
+        }
+        document.getElementById("num").innerHTML = random(1, 1000);
+    </script>
 </html>
