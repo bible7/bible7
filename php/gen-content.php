@@ -144,7 +144,7 @@ $options = [
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="../../css/pure-min.css?1">
 <link rel='stylesheet' href='../../css/my.css?2'>
-<link rel="stylesheet" href="../../css/bible_content.css?4">
+<link rel="stylesheet" href="../../css/bible_content.css?5">
 EOF;
 $options['BodyFoot'] = <<<EOF
 <div style="display: none;">
