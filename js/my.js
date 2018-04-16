@@ -53,4 +53,7 @@ $(document).ready(function(){
 	$('body').on('click', '.bible-title', function() {
 		$('.play-pause:visible').click();
 	})
+	setTimeout(function() {
+		$('.bible-content-tips').fadeOut();
+	}, 1500);
 });

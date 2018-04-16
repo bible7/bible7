@@ -1022,4 +1022,7 @@ button.toast-close-button {
     text-align: center;
     margin: 0 auto;
     margin-top: -12px;
+    position: absolute;
+    left: 37%;
+    z-index: 999;
 }

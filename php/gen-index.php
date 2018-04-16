@@ -137,7 +137,7 @@ $options['BodyMain'] = <<<EOF
         </table>
     </div>
 EOF;
-$options['BodyFoot'] = '<script src="js/my.js?1"></script>';
+$options['BodyFoot'] = '<script src="js/my.js?2"></script>';
 file_put_contents('../index.html', gen_html($options));
 echo "success\n";
 die;
