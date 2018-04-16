@@ -214,7 +214,7 @@ foreach ($chs as $key => $obj) {
                     </thead>
                 </table>
                 <div class="my-tip bible-content-tips">
-                    点击播放
+                    点击播放/暂停
                 </div>
                 <div class="bible-body-i bible-content display_verse_number display_title">
                     {$tmpContent}
