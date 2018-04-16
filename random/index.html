@@ -1,57 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="圣经在线阅读,新约,旧约,手机版圣经,圣经朗读">
-        <meta name="description" content="手机版圣经提供中文圣经在线阅读、圣经朗读等功能">
-        <style>
-            body {
-                text-align: center;
-            }
-            .bg:before {
-              content: ' ';
-              position: fixed;
-              z-index: -1;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523894302934&di=003a04f82b08256c3261cfa792f466c2&imgtype=0&src=http%3A%2F%2Fdp.xinshoucun.com%2Fuploads%2Fpictures%2F2011-12%2F20111224232830167750t11036026911634_2.jpg) center 0 no-repeat;
-              background-size: cover;
-            }
-            .random {
-                background: #fff6;
-                padding: 100px;
-                width: 20%;
-                margin: 0 auto;
-                margin-top: 10%;
-                font-weight: bold;
-                color: blue;
-            }
-            #num {
-                font-size: 40px;
-                font-weight: bold;
-                color: red;
-                padding: 10px;
-            }
-            .tip {
-                top: -9px;
-                position: relative;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="bg"></div>
-        <p class="random">
-            <span class="tip">随机数：</span>
-            <span id="num"></span>
-        </p>
-    </body>
-    <script>
-        function random(min, max) {
-            return parseInt(Math.random()*(max-min+1)+min,10);
-        }
-        document.getElementById("num").innerHTML = random(1, 1000);
-    </script>
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>圣经阅读</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="圣经在线阅读,新约,旧约,手机版圣经,圣经朗读">
+    <meta name="description" content="手机版圣经提供中文圣经在线阅读、圣经朗读等功能">
+
+    <link rel="stylesheet" href="../css/common.css?2">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="../css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="../css/layouts/side-menu.css">
+    <!--<![endif]-->
+    	<link rel="stylesheet" href="css/random.css">
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">菜单</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href='#' class="pure-menu-link">
+                    <label for="switch-auto" style="cursor: pointer;">自动播放</label>
+                    <label class="switch">
+                      <input type="checkbox" id="switch-auto">
+                      <span class="slider round"></span>
+                    </label>
+                </a></li>
+                <li class="pure-menu-item"><a href='/' class="pure-menu-link" style='color: #e621f3; font-weight: bold;'>主页</a></li>
+                <li class="pure-menu-item"><a href='/about' class="pure-menu-link">关于我</a></li>
+                <li class="pure-menu-item"><a href='/movie' class="pure-menu-link">圣经电影</a></li>
+                <li class="pure-menu-item"><a href='/music' class="pure-menu-link">自然轻音乐</a></li>
+                <li class="pure-menu-item"><a href='/random' class="pure-menu-link">随机数</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        	<div class="bg"></div>
+    <p class="random">
+        <span class="tip">随机数：</span>
+        <span id="num"></span>
+    </p>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/js.cookie-2.2.0.min.js"></script>
+<script src="../js/ui.js"></script>
+<script src="js/random.js"></script>
+</body>
 </html>
