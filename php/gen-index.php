@@ -3,7 +3,7 @@ include_once('template.php');
 $options = [];
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="css/pure-min.css">
-<link rel='stylesheet' href='css/my.css?1'>
+<link rel='stylesheet' href='css/my.css?2'>
 EOF;
 $options['BodyMain'] = <<<EOF
     <div class="my-content">

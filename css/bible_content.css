@@ -1006,3 +1006,11 @@ button.toast-close-button {
 .bible-title {
     cursor: pointer;
 }
+.bible-body-i.bible-content {
+    background: #fff;
+    opacity: 0.8;
+    margin-top: -31px;
+    margin-bottom: 12px;
+    padding: 15px;
+    padding-top: 0px;
+}

@@ -74,7 +74,7 @@ $options = [
 ];
 $options['HeadFoot'] = <<<EOF
 <link rel="stylesheet" href="../css/pure-min.css">
-<link rel='stylesheet' href='../css/my.css?1'>
+<link rel='stylesheet' href='../css/my.css?2'>
 EOF;
 $options['BodyFoot'] = '<script src="../js/my.js?1"></script>';
 foreach ($chs as $key => $obj) {
