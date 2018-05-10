@@ -46,14 +46,8 @@
 }(this, this.document));
 
 $(document).ready(function(){
-    // 读取cookie
-    var config = Cookies.getJSON('config');
-    if (typeof config == "undefined") {
-        config = {
-            autoPlay: false
-        };
-    }
-    if (config.autoPlay) {
+    var urlOption = window.location.href.split('?');
+    if (urlOption.length >= 2 && urlOption[1] == 'auto_next') {
         $('#switch-auto').prop('checked', true);
         if ($('.control.play').length) {
             play_audio($('.control.play:first'));

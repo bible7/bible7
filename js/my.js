@@ -21,7 +21,7 @@ if ($(".control").length) {
 	var player = plyr.setup();
 	player[0].on('ended', function(event) {
 		if ($('#switch-auto').prop('checked')) {
-			window.location.href =  $('.pevious-next.next').attr('href');
+			window.location.href =  $('.pevious-next.next').attr('href') + '?auto_next';
 		}
 		player[0].rewind(0);
 		$('.control').hide();
