@@ -152,6 +152,11 @@ $options['BodyFoot'] = <<<EOF
       <source src="" type="audio/mp3">
     </audio>
 </div>
+<script>
+    $(document).ready(function(){
+        $('#auto_next').show();
+    });
+</script>
 <script src="../../js/plyr.js"></script>
 <script src="../../js/my.js?2"></script>
 EOF;

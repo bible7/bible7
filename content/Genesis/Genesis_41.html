@@ -30,8 +30,8 @@
         <div class="pure-menu">
             <a class="pure-menu-heading" href="#">菜单</a>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href='#' class="pure-menu-link">
-                    <label for="switch-auto" style="cursor: pointer;">自动播放</label>
+                <li class="pure-menu-item" id='auto_next' style='display:none;'><a href='#' class="pure-menu-link">
+                    <label for="switch-auto" style="cursor: pointer;">自动朗读下一章</label>
                     <label class="switch">
                       <input type="checkbox" id="switch-auto">
                       <span class="slider round"></span>
@@ -341,6 +341,11 @@
       <source src="" type="audio/mp3">
     </audio>
 </div>
+<script>
+    $(document).ready(function(){
+        $('#auto_next').show();
+    });
+</script>
 <script src="../../js/plyr.js"></script>
 <script src="../../js/my.js?2"></script>
 </body>
