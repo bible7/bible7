@@ -7,6 +7,7 @@ $options['HeadFoot'] = <<<EOF
 EOF;
 $options['BodyMain'] = <<<EOF
     <div class="my-content">
+        <p style="position: absolute; z-index: 999; left: 41%; top: -9px; ">「Hosted by Coding Pages」</p>
         <table class="pure-table pure-table-bordered my-table">
             <thead>
                 <tr class="my-tr">
